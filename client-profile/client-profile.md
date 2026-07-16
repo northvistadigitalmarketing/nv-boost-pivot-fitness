@@ -41,4 +41,10 @@ Direct, gritty, encouraging, no-nonsense. Speaks to beginners and experienced at
 ## Delivery Log
 | Date | Line | Deliverable | Commit | Krista Execution | Status |
 |---|---|---|---|---|---|
-| 2026-07-16 | Boost Engine | Provision workspace (repo, profile, Pages) | this commit | — | Complete |
+| 2026-07-16 | Boost Engine | Provision workspace (repo, profile, Pages) | 4dbcf483 | — | Complete |
+| 2026-07-16 | Paid Ads | Conversion landing page (docs/index.html) | e3aa6617 | — | Published |
+| 2026-07-16 | SEO & GEO | Blog: how to start strength training (docs/blog/) | 4986dc26 | — | Published |
+| 2026-07-16 | Paid Ads | Google Search campaign spec (not launched) | 623b680d | — | Spec (gated) |
+| 2026-07-16 | Boost Engine | Signed MSA filed · docset: NV-2026-21-Pivot-Fitness-MSA.pdf | — | CEC_auto_7642b184 | Filed |
+| 2026-07-16 | SEO & GEO | LP rendition filed · docset: pivot-fitness-landing-page.txt | — | CEC_auto_c334dc7b | Filed |
+| 2026-07-16 | SEO & GEO | Blog rendition filed · docset: pivot-fitness-blog-strength-training.txt | — | CEC_auto_6f3a80cd | Filed |
