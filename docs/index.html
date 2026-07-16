@@ -1,21 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex">
-  <title>{{CUSTOMER_NAME}} — Site Provisioned</title>
-  <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; background: #f6f8fa; color: #24292f; }
-    .card { text-align: center; padding: 3rem 4rem; background: #fff; border: 1px solid #d0d7de; border-radius: 8px; }
-    h1 { font-size: 1.25rem; font-weight: 600; margin: 0 0 .5rem; }
-    p { margin: 0; color: #57606a; font-size: .9rem; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Pivot Fitness — Coached Strength &amp; Functional Training in Kaysville, UT</title>
+<meta name="description" content="Coached strength, circuit, mobility, and HYROX training in Kaysville, Utah. No egos, no gimmicks — just training that works. Start with 2 weeks for $1.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#0f1113;--panel:#16191c;--panel2:#1d2126;--line:#2a2f36;--text:#f3f1ec;--muted:#a7adb4;--accent:#ff5a1f;--accent2:#ffd23f}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,.display{font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.5px;line-height:1.05;font-weight:700}
+  a{color:inherit}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  .demo-banner{background:var(--accent2);color:#161616;font-size:13px;font-weight:600;text-align:center;padding:8px 16px}
+  .demo-banner a{color:#161616;text-decoration:underline}
+  header{position:sticky;top:0;z-index:20;background:rgba(15,17,19,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{font-family:'Oswald',sans-serif;font-weight:700;font-size:22px;letter-spacing:2px}
+  .brand span{color:var(--accent)}
+  .nav-cta{display:flex;align-items:center;gap:14px}
+  .phone{color:var(--muted);font-weight:600;text-decoration:none;font-size:15px}
+  .phone:hover{color:var(--text)}
+  .btn{display:inline-block;background:var(--accent);color:#fff;font-weight:700;text-decoration:none;padding:13px 22px;border-radius:6px;font-size:15px;border:none;cursor:pointer;transition:transform .08s ease,background .15s ease}
+  .btn:hover{background:#ff6f3d;transform:translateY(-1px)}
+  .btn-ghost{background:transparent;border:1.5px solid var(--line);color:var(--text)}
+  .btn-ghost:hover{border-color:var(--accent);background:transparent}
+  .btn-lg{padding:17px 30px;font-size:17px}
+  .hero{position:relative;padding:96px 0 84px;background:radial-gradient(1200px 500px at 70% -10%,rgba(255,90,31,.16),transparent 60%),var(--bg)}
+  .eyebrow{color:var(--accent);font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:13px;margin-bottom:18px}
+  .hero h1{font-size:clamp(38px,6vw,68px);max-width:16ch}
+  .hero h1 em{color:var(--accent);font-style:normal}
+  .hero p.sub{margin:22px 0 32px;font-size:19px;color:var(--muted);max-width:52ch}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .microcopy{margin-top:16px;color:var(--muted);font-size:14px}
+  .strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--panel)}
+  .strip .wrap{display:flex;flex-wrap:wrap;gap:10px 28px;justify-content:center;padding:18px 24px}
+  .strip span{font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:1.5px;font-size:14px;color:var(--muted)}
+  .strip b{color:var(--accent)}
+  section.pad{padding:80px 0}
+  .sec-head{max-width:60ch;margin-bottom:44px}
+  .sec-head h2{font-size:clamp(28px,4vw,42px)}
+  .sec-head p{color:var(--muted);font-size:18px;margin-top:14px}
+  .grid{display:grid;gap:20px}
+  .g3{grid-template-columns:repeat(3,1fr)}
+  .g2{grid-template-columns:repeat(2,1fr)}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:28px}
+  .card h3{font-size:20px;margin-bottom:10px}
+  .card p{color:var(--muted)}
+  .num{font-family:'Oswald',sans-serif;font-size:15px;font-weight:700;color:#0f1113;background:var(--accent);width:34px;height:34px;display:flex;align-items:center;justify-content:center;border-radius:50%;margin-bottom:16px}
+  .stakes{background:var(--panel2)}
+  .stakes ul{list-style:none;margin-top:8px}
+  .stakes li{padding:10px 0 10px 30px;position:relative;color:var(--muted)}
+  .stakes li::before{content:"\2717";position:absolute;left:0;color:var(--accent);font-weight:700}
+  .guide-flex{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+  .prog-tag{display:inline-block;font-family:'Oswald',sans-serif;letter-spacing:1px;text-transform:uppercase;font-size:12px;color:var(--accent2);border:1px solid var(--line);border-radius:20px;padding:4px 12px;margin-bottom:14px}
+  .offer{background:linear-gradient(120deg,var(--accent),#ff8a4c);color:#fff;border-radius:16px;padding:56px 40px;text-align:center}
+  .offer .price{font-family:'Oswald',sans-serif;font-size:clamp(56px,10vw,104px);line-height:.9}
+  .offer .price small{font-size:24px;vertical-align:super}
+  .offer h2{font-size:clamp(26px,4vw,40px)}
+  .offer p{max-width:46ch;margin:14px auto 28px;font-size:18px;opacity:.95}
+  .offer .btn{background:#0f1113;color:#fff}
+  .offer .btn:hover{background:#000}
+  .loc{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+  .loc dl{display:grid;grid-template-columns:auto 1fr;gap:8px 18px;margin-top:8px}
+  .loc dt{color:var(--accent);font-weight:700}
+  .loc dd{color:var(--muted)}
+  form.lead{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:28px}
+  form.lead label{display:block;font-size:13px;color:var(--muted);margin:14px 0 6px;font-weight:600}
+  form.lead input{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:12px 14px;color:var(--text);font-size:15px}
+  form.lead .note{font-size:12px;color:var(--muted);margin-top:14px}
+  footer{border-top:1px solid var(--line);background:var(--panel);padding:40px 0;color:var(--muted);font-size:14px}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center}
+  .final{text-align:center;background:radial-gradient(900px 400px at 50% 120%,rgba(255,90,31,.18),transparent 60%)}
+  @media(max-width:820px){.g3,.g2,.guide-flex,.loc{grid-template-columns:1fr}.nav .phone{display:none}}
+</style>
 </head>
 <body>
-  <div class="card">
-    <h1>{{CUSTOMER_NAME}}</h1>
-    <p>Site provisioned. First deliverable pending.</p>
+<div class="demo-banner">DEMO PAGE — a North Vista Marketing demonstration, not the official Pivot Fitness site. Visit <a href="https://www.pivotgym.fit/">pivotgym.fit</a>.</div>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand">PIVOT<span>FITNESS</span></div>
+    <div class="nav-cta">
+      <a class="phone" href="tel:8018192942">801-819-2942</a>
+      <a class="btn" href="https://www.pivotgym.fit/get-started">Start for $1</a>
+    </div>
   </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Kaysville, Utah · Strength &amp; Functional Fitness</div>
+    <h1>Get coached like it <em>actually matters.</em></h1>
+    <p class="sub">Structured Strength, Circuit, and Mobility classes for people who want real progress — not another crowded gym where you're left to figure it out alone. No egos. No gimmicks. Just training that works.</p>
+    <div class="hero-cta">
+      <a class="btn btn-lg" href="https://www.pivotgym.fit/get-started">Claim 2 Weeks for $1</a>
+      <a class="btn btn-ghost btn-lg" href="tel:8018192942">Call the gym</a>
+    </div>
+    <p class="microcopy">Beginner or experienced — every session is coached in real time. Cancel anytime.</p>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap">
+    <span><b>/</b> Strength</span>
+    <span><b>/</b> Circuit</span>
+    <span><b>/</b> Mobility</span>
+    <span><b>/</b> HYROX</span>
+    <span><b>/</b> Youth Training</span>
+  </div>
+</div>
+
+<section class="pad stakes">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Most gyms hand you a key and walk away</h2>
+      <p>You pay for access, then stand around guessing. That's how people get hurt, get bored, and quit by February.</p>
+    </div>
+    <div class="grid g2">
+      <ul>
+        <li>No one shows you how to move safely under a barbell</li>
+        <li>Random workouts that don't add up to real strength</li>
+        <li>Intimidating rooms where beginners feel invisible</li>
+      </ul>
+      <ul>
+        <li>Progress that stalls because nothing is programmed</li>
+        <li>Motivation that fades the moment life gets busy</li>
+        <li>Zero accountability once your card is charged</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="pad">
+  <div class="wrap guide-flex">
+    <div>
+      <div class="prog-tag">Your coaches</div>
+      <h2>Built from grit, not comfort</h2>
+      <p style="color:var(--muted);margin-top:14px;font-size:18px">Pivot Fitness was founded by a former firefighter and paramedic whose job was helping people <em>before</em> things fell apart. That mindset runs the gym: smart coaching, proper movement, and consistent effort — so you build strength, confidence, and resilience that lasts inside and outside the gym.</p>
+      <p style="color:var(--muted);margin-top:14px;font-size:18px">You won't get lost here. You'll be coached, challenged, and supported by a community that shows up and puts in the work.</p>
+    </div>
+    <div class="card">
+      <h3>What makes it different</h3>
+      <p style="margin-bottom:14px">Real-time coaching on every rep. Programming that builds week over week. A room where first-timers and seasoned athletes train side by side.</p>
+      <p><b style="color:var(--text)">Where you pivot your perspective</b> — and everything else follows.</p>
+    </div>
+  </div>
+</section>
+
+<section class="pad stakes">
+  <div class="wrap">
+    <div class="sec-head"><h2>Starting is simple</h2><p>Three steps from "thinking about it" to training with a coach.</p></div>
+    <div class="grid g3">
+      <div class="card"><div class="num">1</div><h3>Claim your $1 trial</h3><p>Grab two weeks for a dollar. Tell us your goals and any injuries — we build around you.</p></div>
+      <div class="card"><div class="num">2</div><h3>Learn the fundamentals</h3><p>An optional onboarding session covers movement basics and barbell technique. New or experienced, you're set up to succeed.</p></div>
+      <div class="card"><div class="num">3</div><h3>Train in class</h3><p>Join coached Strength, Circuit, and Mobility sessions. We adjust in real time and keep progress safe and steady.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="pad">
+  <div class="wrap">
+    <div class="sec-head"><h2>Programs for every goal</h2><p>One membership, structured training across the board.</p></div>
+    <div class="grid g3">
+      <div class="card"><h3>Strength</h3><p>Barbell-based programming to build real, usable strength with coached technique.</p></div>
+      <div class="card"><h3>Circuit</h3><p>Conditioning that spikes your engine and burns fat without the guesswork.</p></div>
+      <div class="card"><h3>Mobility</h3><p>Move better and stay durable — the work that keeps you training for decades.</p></div>
+      <div class="card"><h3>HYROX</h3><p>Train for the sport of fitness racing with dedicated HYROX prep.</p></div>
+      <div class="card"><h3>Youth Training</h3><p>Coaching that teaches young athletes to move, lift, and compete safely.</p></div>
+      <div class="card"><h3>Drop In</h3><p>Traveling through Kaysville? Jump into a class and train with the community.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="pad">
+  <div class="wrap">
+    <div class="offer">
+      <div class="price"><small>$</small>1</div>
+      <h2>Two weeks. One dollar.</h2>
+      <p>Try every class, meet the coaches, and feel the difference real coaching makes — for the price of a protein-shake tip.</p>
+      <a class="btn btn-lg" href="https://www.pivotgym.fit/get-started">Get Started Today</a>
+    </div>
+  </div>
+</section>
+
+<section class="pad stakes">
+  <div class="wrap loc">
+    <div>
+      <div class="prog-tag">Find us</div>
+      <h2>Train in Kaysville</h2>
+      <dl>
+        <dt>Address</dt><dd>457 Deseret Dr. Suite #1, Kaysville, Utah</dd>
+        <dt>Phone</dt><dd><a href="tel:8018192942" style="color:var(--muted)">801-819-2942</a></dd>
+        <dt>Booking</dt><dd><a href="https://pivotfit.pushpress.com/landing/plans" style="color:var(--muted)">Memberships &amp; schedule</a></dd>
+      </dl>
+    </div>
+    <form class="lead" onsubmit="return false;">
+      <h3 style="font-family:'Oswald',sans-serif;text-transform:uppercase">Request info</h3>
+      <label>First name</label><input type="text" name="first" placeholder="Jordan">
+      <label>Email</label><input type="email" name="email" placeholder="you@email.com">
+      <label>Phone</label><input type="tel" name="phone" placeholder="801-000-0000">
+      <div style="margin-top:18px"><button class="btn" type="submit">Send</button></div>
+      <p class="note">Demo form — not connected. On a live build this routes leads into the client's CRM with call/form tracking.</p>
+    </form>
+  </div>
+</section>
+
+<section class="pad final">
+  <div class="wrap">
+    <h2 style="font-size:clamp(30px,5vw,52px);max-width:18ch;margin:0 auto">Stop guessing. Start getting coached.</h2>
+    <p style="color:var(--muted);font-size:19px;margin:18px auto 30px;max-width:46ch">Your first two weeks are $1. All you have to do is show up.</p>
+    <a class="btn btn-lg" href="https://www.pivotgym.fit/get-started">Claim 2 Weeks for $1</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><strong style="color:var(--text)">PIVOT FITNESS</strong> · 457 Deseret Dr. #1, Kaysville, UT · <a href="tel:8018192942">801-819-2942</a></div>
+    <div>Demo landing page by North Vista Marketing · <a href="https://www.pivotgym.fit/">official site</a></div>
+  </div>
+</footer>
 </body>
 </html>
