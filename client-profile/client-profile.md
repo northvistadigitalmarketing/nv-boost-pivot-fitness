@@ -48,3 +48,5 @@ Direct, gritty, encouraging, no-nonsense. Speaks to beginners and experienced at
 | 2026-07-16 | Boost Engine | Signed MSA filed · docset: NV-2026-21-Pivot-Fitness-MSA.pdf | — | CEC_auto_7642b184 | Filed |
 | 2026-07-16 | SEO & GEO | LP rendition filed · docset: pivot-fitness-landing-page.txt | — | CEC_auto_c334dc7b | Filed |
 | 2026-07-16 | SEO & GEO | Blog rendition filed · docset: pivot-fitness-blog-strength-training.txt | — | CEC_auto_6f3a80cd | Filed |
+| 2026-07-16 | Boost Engine | Filer-skill test doc filed · docset: Filer-Skill-Test-2026-07-16.txt (test data) | — | CEC_auto_e024b386 | Filed |
+| 2026-07-16 | Paid Ads | Google Search spec QA patch (RSA descriptions ≤90 chars) | this commit | — | Spec (gated) |
